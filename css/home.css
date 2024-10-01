@@ -1,0 +1,98 @@
+
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --dark-green:#008000;
+    --light-color:#666;
+    --red:#FF0000;
+    --box-shadow:0.5rem 1rem rgba(0,0,0,.1);
+    --border:2rem solid rgba(0,0,0,.1);
+    --outline: 1rem solid rgba(0,0,0,.1);
+    --outline-hover: 2rem solid var(--black);
+    
+
+}
+
+
+section{
+    padding: 2rem 9%;
+}
+
+
+/* button */
+
+.btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    border-radius: 0.3rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn1:hover{
+    background: var(--dark-green);
+    color: #fff;
+}
+
+
+
+
+/* product section start */
+
+
+
+/* categories section start */
+
+.categories .categories-slider{
+    padding: 1rem;
+}
+
+.categories .categories-slider:first-child{
+    margin-bottom: 2rem;
+}
+
+.categories .categories-slider .box{
+    background:#fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+
+.categories .categories-slider .box:hover{
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+}
+
+.categories .categories-slider .box img{
+    height: 20rem;
+}
+
+.categories .categories-slider .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+
+
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+.heading span{
+    background: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: 5rem 3rem;
+    clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+}

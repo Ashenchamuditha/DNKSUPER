@@ -1,0 +1,120 @@
+:root{
+    --orange:#ff7800;
+    --dark-green:#008000;
+    --light-color:#666;
+    --red:#FF0000;
+    --green:#27ae60;
+    --black:#2c2c54;
+    --box-shadow:0.5rem 1rem rgba(0,0,0,.1);
+    --border:2rem solid rgba(0,0,0,.1);
+    --outline: 1rem solid rgba(0,0,0,.1);
+    --outline-hover: 2rem solid var(--black);
+    
+/* home promotion */
+
+}.banner-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 5.5rem;
+}
+
+.banner-container .banner{
+    flex: 1 1 40rem;
+    height: 50rem;
+    overflow:hidden;
+    position: relative;
+}
+.banner-container .banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-container .banner .content{
+    position: absolute;
+    top: 50%;left: 4%;
+    transform: translateY(-50%);
+}
+
+.banner-container .banner .content h3{
+    font-size: 3rem;
+    color: var(#333);
+}
+
+.banner-container .banner:hover img{
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.btn1{
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--green);
+    color: #fff;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.btn1:hover{
+    background: var(--black);
+}
+
+/* deal of the day  */
+
+.deal{
+    background: url('./images/deal.JPG')no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.deal .content{
+    max-width: 50rem;
+}
+
+.deal .content .title{
+    font-size: 4rem;
+    color: var(--black);
+}
+
+.deal .content p{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    color: #333;
+}
+
+.deal .content .count-down{
+ 
+    display: flex;
+    gap: 1rem;
+    padding: .5rem 0;
+}
+
+.deal .content .count-down .box{
+    width: 9rem;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.3) ;
+
+}
+
+.deal .content .count-down .box h3{
+    color: var(--black);
+    background: #fff;
+    height: 7rem;
+    line-height: 7rem;
+    width: 100%;
+    font-size: 5rem;
+}
+
+.deal .content .count-down .box span{
+    display: block;
+    background: var(--black);
+    color: #fff;
+    width: 100%;
+    padding: .5rem;
+    font-size: 2rem;
+}
